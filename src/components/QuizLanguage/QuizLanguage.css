@@ -11,3 +11,7 @@
     margin: 0;
     border: none !important;
 }
+
+.btn-primary {
+    width: 100%;
+}
