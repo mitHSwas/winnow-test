@@ -1,0 +1,13 @@
+.card {
+    margin: 20px;
+}
+
+.card img {
+    background-color: #dbe7ee;
+}
+
+.card-body {
+    background-color: white !important;
+    margin: 0;
+    border: none !important;
+}

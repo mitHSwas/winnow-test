@@ -9,9 +9,8 @@ const Header = () => {
             <Navbar>
                 <Container>
                     <Navbar.Brand>
-                        <Link to='/'>Winnow Test</Link>
+                        <Link to='/home'>Winnow Test</Link>
                     </Navbar.Brand>
-                    <Navbar.Toggle />
                     <Navbar.Collapse className="justify-content-end">
                         <Nav.Item >
                             <NavLink className={({ isActive }) => isActive ? "active" : undefined} to='/home'>Home</NavLink>

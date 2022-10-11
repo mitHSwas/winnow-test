@@ -15,7 +15,8 @@ function App() {
       children: [
         {
           path: '/home',
-          element: <Home></Home>
+          element: <Home></Home>,
+          loader: () => fetch("https://openapi.programming-hero.com/api/quiz")
         },
         {
           path: 'statistics',

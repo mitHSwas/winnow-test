@@ -1,0 +1,31 @@
+.upper-header {
+    background-image: url(../../images/quiz-2137664.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    height: 500px;
+    border-radius: 10px;
+}
+
+.upper-header div {
+    color: whitesmoke;
+    font-family: cursive;
+    padding: 16.7%;
+    background-color: rgba(54, 60, 66, 0.582);
+    border-radius: 10px;
+}
+
+.upper-header h1 {
+    font-size: 40px;
+}
+
+.upper-header a {
+    text-decoration: none;
+    color: gray;
+}
+
+#lower-header {
+    display: flex;
+    margin: 3rem 0;
+    /* background-color: #f5f2f2; */
+    border-radius: 15px;
+}
