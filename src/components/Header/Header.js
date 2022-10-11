@@ -1,6 +1,7 @@
 import React from 'react';
 import { Container, Nav, Navbar } from 'react-bootstrap';
-import { Link } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
+import './Header.css'
 
 const Header = () => {
     return (
@@ -12,17 +13,17 @@ const Header = () => {
                     </Navbar.Brand>
                     <Navbar.Toggle />
                     <Navbar.Collapse className="justify-content-end">
-                        <Nav.Item>
-                            <Link to='/'>Home</Link>
+                        <Nav.Item >
+                            <NavLink className={({ isActive }) => isActive ? "active" : undefined} to='/home'>Home</NavLink>
                         </Nav.Item>
                         <Nav.Item>
-                            <Link to='/statistics'>Statistics</Link>
+                            <NavLink className={({ isActive }) => isActive ? "active" : undefined} to='/statistics'>Statistics</NavLink>
                         </Nav.Item>
                         <Nav.Item>
-                            <Link to='/blogs'>Blogs</Link>
+                            <NavLink className={({ isActive }) => isActive ? "active" : undefined} to='/blogs'>Blogs</NavLink>
                         </Nav.Item>
                         <Nav.Item>
-                            <Link to='/about'>About us</Link>
+                            <NavLink className={({ isActive }) => isActive ? "active" : undefined} to='/about'>About us</NavLink>
                         </Nav.Item>
                     </Navbar.Collapse>
                 </Container>

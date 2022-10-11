@@ -1,0 +1,22 @@
+.navbar-brand a {
+    text-decoration: none;
+    color: gray;
+    font-weight: bold;
+    font-size: 36px;
+}
+
+.nav-item a {
+    text-decoration: none;
+    margin-left: 50px;
+    padding: 5px 10px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #999696;
+}
+
+.active {
+    background-color: #c1eec1;
+    padding: 5px 10px;
+    border-radius: 5px;
+    vertical-align: middle;
+}
