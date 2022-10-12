@@ -1,12 +1,11 @@
 import React from 'react';
 import './Questions.css';
 import toast, { Toaster } from 'react-hot-toast';
-import { BeakerIcon, LockClosedIcon } from '@heroicons/react/24/solid'
+import { LockClosedIcon } from '@heroicons/react/24/solid'
 
 const Questions = ({ questions }) => {
     const { question, options, id, correctAnswer } = questions;
     const notify = option => {
-        console.log(option, correctAnswer)
         if (option === correctAnswer) {
             toast("Congratulations! Your answer is correct.")
         }
@@ -15,13 +14,13 @@ const Questions = ({ questions }) => {
         }
     };
 
-    const quizAnswer = () => {
-        console.log(correctAnswer)
+    const quizAnswer = answer => {
+        toast(answer)
     }
 
     return (
         <div className='quiz-container'>
-            <LockClosedIcon onClick={() => quizAnswer()} className='hero-icon' />
+            <LockClosedIcon onClick={() => quizAnswer(correctAnswer)} className='hero-icon' />
             <h4>Question: <br /> {question}</h4>
             <Toaster />
             <div className='quizzes'>
