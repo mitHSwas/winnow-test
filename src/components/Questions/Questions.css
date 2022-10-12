@@ -30,3 +30,10 @@
 .quizzes div label {
     width: 100%;
 }
+
+.hero-icon {
+    width: 22px;
+    cursor: pointer;
+    position: absolute;
+    right: 18%;
+}
