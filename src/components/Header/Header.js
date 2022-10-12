@@ -13,7 +13,7 @@ const Header = () => {
                     </Navbar.Brand>
                     <Navbar.Collapse className="justify-content-end">
                         <Nav.Item >
-                            <NavLink className={({ isActive }) => isActive ? "active" : undefined} to='/'>Home</NavLink>
+                            <NavLink className={({ isActive }) => isActive ? "active" : undefined} to='/home'>Home</NavLink>
                         </Nav.Item>
                         <Nav.Item>
                             <NavLink className={({ isActive }) => isActive ? "active" : undefined} to='/statistics'>Statistics</NavLink>

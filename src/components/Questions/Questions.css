@@ -12,15 +12,15 @@
 
 .quizzes div {
     margin: 10px auto;
+    padding: 5px;
     text-align: start;
     width: 60%;
     display: flex;
 }
 
 .quizzes div:hover {
-    background-color: aqua;
-    padding: 5px 10px;
-    border: .5px solid blue;
+    background-color: #d0dbdb;
+    border-radius: 2px;
 }
 
 .quizzes div input {
