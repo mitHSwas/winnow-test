@@ -1,0 +1,19 @@
+.blogs {
+    margin: 30px;
+}
+
+.blog {
+    border: 1px solid #dad8d8;
+    margin: 30px;
+    border-radius: 12px;
+    padding: 20px;
+}
+
+.blog h1 {
+    color: #6b6b6b;
+    margin-bottom: 15px;
+}
+
+.blog p {
+    color: gray;
+}

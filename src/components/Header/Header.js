@@ -9,20 +9,17 @@ const Header = () => {
             <Navbar>
                 <Container>
                     <Navbar.Brand>
-                        <Link to='/home'>Winnow Test</Link>
+                        <Link to='/'>Winnow Test</Link>
                     </Navbar.Brand>
                     <Navbar.Collapse className="justify-content-end">
                         <Nav.Item >
-                            <NavLink className={({ isActive }) => isActive ? "active" : undefined} to='/home'>Home</NavLink>
+                            <NavLink className={({ isActive }) => isActive ? "active" : undefined} to='/'>Home</NavLink>
                         </Nav.Item>
                         <Nav.Item>
                             <NavLink className={({ isActive }) => isActive ? "active" : undefined} to='/statistics'>Statistics</NavLink>
                         </Nav.Item>
                         <Nav.Item>
                             <NavLink className={({ isActive }) => isActive ? "active" : undefined} to='/blogs'>Blogs</NavLink>
-                        </Nav.Item>
-                        <Nav.Item>
-                            <NavLink className={({ isActive }) => isActive ? "active" : undefined} to='/about'>About us</NavLink>
                         </Nav.Item>
                     </Navbar.Collapse>
                 </Container>
