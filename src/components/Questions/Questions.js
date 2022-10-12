@@ -1,16 +1,29 @@
 import React from 'react';
+import './Questions.css';
 
 const Questions = ({ questions }) => {
-    console.log(questions)
     const { question, options, id, correctAnswer } = questions;
     return (
-        <div>
-            <h3>Question: {question}</h3>
-            <div>
-                <input type="radio" name="react" value="HTML" />{options[0]}
-                <input type="radio" name="react" value="CSS" />{options[1]}
-                <input type="radio" name="react" value="JavaScript" />{options[2]}
-                <input type="radio" name="react" value="JavaScript" />{options[3]}
+        <div className='container quiz-container'>
+            <h4>Question: <br /> {question}</h4>
+            <div className='quizzes'>
+                <div>
+                    <input type="radio" id={id} name={question} />
+                    <label for={id}>{options[0]}</label>
+                </div>
+                <div>
+                    <input type="radio" id={correctAnswer} name={question} />
+                    <label for={correctAnswer}>{options[1]}</label>
+                </div>
+                <div>
+                    <input type="radio" id={options[0]} name={question} />
+                    <label for={options[0]}>{options[2]}</label>
+                </div>
+                <div>
+                    <input type="radio" id={options[1]} name={question} />
+                    <label for={options[1]}>{options[3]}</label>
+                </div>
+
             </div>
         </div>
     );
